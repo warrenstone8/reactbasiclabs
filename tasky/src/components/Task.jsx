@@ -1,13 +1,14 @@
-import React from 'react';
-import '../App.css';
+import React from "react";
+import "../App.css"; 
 
-function Task({ title, description, deadline, priority }) {
+function Task({ title, description, deadline, priority, done, markDone }) {
   return (
-    <div className="card">
-      <h2>{title}</h2>
+    <div className="card" style={{ backgroundColor: done ? 'lightgrey' : '#5bb4c4' }}>
+      <h3>{title}</h3>
       <p>{description}</p>
-      <p><strong>Deadline:</strong> {deadline}</p>
-      <div className="priority">Priority: {priority}</div>
+      <p>{deadline}</p>
+      <p>Priority: {priority}</p>
+      <button onClick={markDone}>{done ? "Undo" : "Done"}</button> 
     </div>
   );
 }
