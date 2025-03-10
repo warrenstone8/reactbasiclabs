@@ -1,14 +1,15 @@
-import React from "react";
-import '../App.css'; 
+import React from 'react';
+import '../App.css';
 
-const Task = (props) => {
+function Task({ title, description, deadline, priority }) {
   return (
     <div className="card">
-      <p className="title">{props.title}</p>
-      <p>Due: {props.deadline}</p>
-      <p className="description">{props.description}</p> 
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <p><strong>Deadline:</strong> {deadline}</p>
+      <div className="priority">Priority: {priority}</div>
     </div>
   );
-};
+}
 
 export default Task;

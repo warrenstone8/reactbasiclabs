@@ -26,3 +26,36 @@
   font-style: italic;
 }
 
+.task-card {
+  border: 2px solid #007BFF; /* Default blue border */
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.priority-label {
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 3px;
+  display: inline-block;
+  color: white;
+}
+
+
+.task-card {
+  border: 2px solid #007BFF; /* Default blue border */
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.priority {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  margin-top: auto; 
+}
