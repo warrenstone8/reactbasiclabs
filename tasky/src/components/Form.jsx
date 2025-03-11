@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AddTaskForm({ change, submit, formState }) {  
+function AddTaskForm({ change, submit, formState }) {
   return (
     <form onSubmit={submit}>
       <label>
@@ -8,7 +8,7 @@ function AddTaskForm({ change, submit, formState }) {
         <input
           type="text"
           name="title"
-          value={formState.title} 
+          value={formState.title}
           required
           onChange={(event) => change(event)}  
         />
@@ -19,9 +19,9 @@ function AddTaskForm({ change, submit, formState }) {
         <input
           type="date"
           name="deadline"
-          value={formState.deadline}  
+          value={formState.deadline}
           required
-          onChange={(event) => change(event)}  
+          onChange={(event) => change(event)} 
         />
       </label>
       <br />
@@ -30,7 +30,7 @@ function AddTaskForm({ change, submit, formState }) {
         <input
           type="text"
           name="description"
-          value={formState.description}  
+          value={formState.description}
           onChange={(event) => change(event)}  
         />
       </label>

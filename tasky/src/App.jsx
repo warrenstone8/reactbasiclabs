@@ -33,7 +33,7 @@ function App() {
     setTaskState({ tasks });
   };
 
-  
+ 
   const formChangeHandler = (event) => {
     let form = { ...formState };
 
@@ -58,7 +58,7 @@ function App() {
     console.log(formState);  
   };
 
-  
+ 
   const formSubmitHandler = (event) => {
     event.preventDefault();
 
@@ -75,7 +75,7 @@ function App() {
       title: "",
       description: "",
       deadline: "",
-      priority: "Low",
+      priority: "Low",  
     });
   };
 
@@ -94,7 +94,7 @@ function App() {
         />
       ))}
 
-      
+     
       <AddTaskForm submit={formSubmitHandler} change={formChangeHandler} formState={formState} />
     </div>
   );

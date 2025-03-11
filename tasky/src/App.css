@@ -1,113 +1,73 @@
-
 .card {
-  display: inline-block;
-  vertical-align: top;
-  font-family: system-ui;
-  background: #5bb4c4;
-  color: white;
+  background-color: #5bb4c4;
+  padding: 20px;
+  border-radius: 10px;
   text-align: center;
-  width: 180px;
-  height: 240px;
+  width: 200px;
   margin: 10px;
-  padding: 10px;
-  position: relative;
+  display: inline-block;
 }
 
-.title {
+h3 {
   font-weight: bold;
-  font-size: 1.2em;
 }
 
 .description {
-  font-size: 1em;
-  color: #f4f4f4;
-  padding-top: 10px;
-  margin-top: 10px;
   font-style: italic;
 }
 
-.task-card {
-  border: 2px solid #007BFF; /* Default blue border */
-  padding: 15px;
-  margin: 10px;
-  border-radius: 5px;
-  background-color: white;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.priority-label {
-  padding: 5px 10px;
-  font-weight: bold;
-  border-radius: 3px;
-  display: inline-block;
-  color: white;
-}
-
-
-.task-card {
-  border: 2px solid #007BFF; /* Default blue border */
-  padding: 15px;
-  margin: 10px;
-  border-radius: 5px;
-  background-color: white;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
 .priority {
-  font-weight: bold;
-  font-size: 14px;
-  padding: 5px 8px;
-  border-radius: 4px;
-  margin-top: auto; 
-}
-button {
-  border: none;
-  border-radius: 3px;
-  font-style: italic;
-  font-size: 0.8em;
-  margin: 4px 6px;
-  width: 50px;
-  height: 25px;
-}
-
-.doneButton {
-  position: absolute;
-  bottom: 5px;
-  left: 5px;
-  color: green;
-}
-.deleteButton {
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-  color: red;
-}
-input[type=text], input[type=date] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+  padding: 8px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
+/* Priority Colors */
+.low {
+  background-color: green;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+}
+
+.medium {
+  background-color: goldenrod;
+  color: white;
+}
+
+.high {
+  background-color: red;
+  color: white;
+}
+
+/* Button Styling */
+.doneButton, .deleteButton {
+  margin: 5px;
+  padding: 5px 10px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
+  font-size: 14px;
   cursor: pointer;
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
+.doneButton {
+  background-color: white;
+  color: green;
+  border: 1px solid green;
 }
 
-form {
-  text-align: left;
-  width: 50%;
-  margin: auto;
+.deleteButton {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+
+.doneButton:hover {
+  background-color: green;
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: red;
+  color: white;
 }
